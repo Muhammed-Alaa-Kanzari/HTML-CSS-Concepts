@@ -1,0 +1,62 @@
+header h1 {
+  background-color: gold;
+}
+
+section {
+  display: flex;
+  /* by default when you initialize flex */
+  /* flex-direction: row; */
+  /* + */
+  flex-wrap: wrap;
+  /* == */
+  /* flex-flow: row wrap; */
+}
+
+article {
+  background-color: rgb(126, 50, 126);
+  color: white;
+  /* flex: 1 200px; */
+  /* flex-grow: 1; */
+  /* flex-basis: 900px; */
+  /* flex: 1 200px; */
+}
+
+article:nth-of-type(2) {
+  background-color: rgb(210, 119, 119);
+}
+
+div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100px;
+}
+button {
+  font-size: 28px;
+}
+
+.container button:nth-child(1) {
+  background-color: blueviolet;
+  /* align-self: ; */
+}
+.container button:nth-child(2) {
+  background-color: green;
+  /* align-self: ; */
+  order: -3;
+}
+.container button:nth-child(3) {
+  background-color: blue;
+  /* align-self: ; */
+}
+
+.container button:nth-child(4) {
+  background-color: red;
+  /* align-self: ; */
+  order: -2;
+}
+
+.container button:nth-child(5) {
+  background-color: rgb(205, 194, 216);
+  /* align-self: ; */
+  order: -1;
+}

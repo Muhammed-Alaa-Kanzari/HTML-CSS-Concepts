@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  /* margin-top: 0; */
+}
+
+header {
+  background: blanchedalmond;
+}
+header h1 {
+  text-align: center;
+  margin: 0;
+}
+article {
+  background: aquamarine;
+}
+
+section {
+  display: flex;
+}
+
+article:nth-child(3) {
+  display: flex;
+  flex-flow: column;
+}
+article:nth-child(3) div:first-child {
+  flex: 1 100px;
+  display: flex;
+  flex-wrap: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+button {
+  flex: 1 auto;
+  margin: 5px;
+  font-size: 18px;
+  line-height: 1.5;
+}
